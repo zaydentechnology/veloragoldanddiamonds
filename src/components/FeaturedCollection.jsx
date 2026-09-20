@@ -13,7 +13,7 @@ function ProductTile({ product, onQuickView, index }) {
         <span className="absolute inset-x-4 bottom-4 hidden translate-y-3 items-center justify-center gap-2 bg-obsidian px-3 py-3 text-[10px] font-bold uppercase tracking-[.14em] text-white opacity-0 transition duration-300 sm:flex sm:group-hover:translate-y-0 sm:group-hover:opacity-100"><Eye size={14} /> View piece</span>
       </button>
       <div className="flex items-start justify-between gap-3 pt-4">
-        <div><p className="text-[9px] font-bold uppercase tracking-[.18em] text-gold-600">{product.category}</p><h3 className="mt-1 font-display text-[1.7rem] leading-[.94] text-obsidian">{product.name}</h3><p className="mt-2 text-xs text-ink/55">{product.price}</p></div>
+        <div><p className="text-[9px] font-bold uppercase tracking-[.18em] text-gold-600">{product.category}</p><h3 className="mt-1 font-display text-[1.7rem] leading-[.94] text-obsidian">{product.name}</h3></div>
         <button onClick={() => onQuickView(product)} className="mt-1 text-ink/45 transition hover:text-gold-600" aria-label={`View ${product.name}`}><ArrowUpRight size={18} /></button>
       </div>
     </motion.article>
@@ -43,7 +43,7 @@ export default function FeaturedCollection({ activeFilter, onFilter, onQuickView
               <img src={heroProduct.image} alt={heroProduct.name} className="absolute inset-0 h-full w-full object-cover transition duration-[1.4s] ease-out group-hover:scale-[1.035]" loading="lazy" />
               <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(30,21,18,.92)_0%,rgba(30,21,18,.12)_63%,rgba(30,21,18,.02)_100%)]" />
               <div className="absolute left-5 top-5 flex items-center gap-2 text-[9px] font-semibold uppercase tracking-[.22em] text-gold-100"><span className="h-px w-7 bg-gold-200" />The considered piece</div>
-              <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8"><p className="text-[10px] font-bold uppercase tracking-[.16em] text-gold-200">{heroProduct.category}</p><div className="mt-3 flex flex-wrap items-end justify-between gap-4"><div><h3 className="font-display text-4xl leading-none sm:text-5xl">{heroProduct.name}</h3><p className="mt-3 text-sm text-white/70">{heroProduct.price}</p></div><button onClick={() => onQuickView(heroProduct)} className="inline-flex items-center gap-2 border-b border-gold-200 pb-2 text-[10px] font-bold uppercase tracking-[.14em] text-gold-100 transition hover:border-white hover:text-white">Discover <ArrowUpRight size={15} /></button></div></div>
+              <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8"><p className="text-[10px] font-bold uppercase tracking-[.16em] text-gold-200">{heroProduct.category}</p><div className="mt-3 flex flex-wrap items-end justify-between gap-4"><h3 className="font-display text-4xl leading-none sm:text-5xl">{heroProduct.name}</h3><button onClick={() => onQuickView(heroProduct)} className="inline-flex items-center gap-2 border-b border-gold-200 pb-2 text-[10px] font-bold uppercase tracking-[.14em] text-gold-100 transition hover:border-white hover:text-white">Discover <ArrowUpRight size={15} /></button></div></div>
             </motion.article>
 
             <div className="grid grid-cols-2 content-start gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10">

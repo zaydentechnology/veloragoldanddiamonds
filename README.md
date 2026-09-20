@@ -44,7 +44,7 @@ gold-jewellery-store/
 
 ## 3. Customization guide
 
-- **Products:** replace the mock products, prices, descriptions, and image URLs in `src/data/products.js`.
+- **Products:** replace the mock products, descriptions, and image URLs in `src/data/products.js`.
 - **Business details:** the verified launch details are centralised in `src/data/site.js`: Prithvi Shopping Mall, near SBI Bank, Uppinangady 574241; WhatsApp and primary phone `+91 91801 96916`; secondary phone `+91 78999 74358`; GSTIN `29ABCFV6880E1ZR`.
 - **WhatsApp & site settings:** all inquiry CTAs read from `src/data/site.js`. India’s country code is included in the WhatsApp link, so it opens the correct number.
 - **SEO:** set the live canonical domain through `VITE_SITE_URL` before launch; page metadata and local-business structured data are maintained in `src/components/SEO.jsx`.

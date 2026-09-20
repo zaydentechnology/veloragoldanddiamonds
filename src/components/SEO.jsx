@@ -18,7 +18,6 @@ export default function SEO() {
         hasMap: site.mapsUrl,
         telephone: site.primaryPhone,
         taxID: site.gstNumber,
-        priceRange: '$$$',
         sameAs: [site.instagram],
         ...(site.siteUrl && { url: site.siteUrl, logo: `${site.siteUrl}/velora-logo-transparent.png`, image: socialImage }),
       },

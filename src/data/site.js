@@ -13,7 +13,7 @@ export const site = {
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Prithvi%20Shopping%20Mall%2C%20Near%20SBI%20Bank%2C%20Uppinangady%2C%20Karnataka%20574241',
   instagram: 'https://www.instagram.com/veloragoldanddiamonds/',
   // WhatsApp requires the country code without a plus sign.
-  whatsappNumber: '919180196916',
+  whatsappNumber: '917899974358',
   siteUrl: import.meta.env.VITE_SITE_URL?.replace(/\/$/, '') || '',
 }
 
