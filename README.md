@@ -61,8 +61,8 @@ The app is intentionally static: there is no checkout, authentication, or server
 
 ## SEO launch setup
 
-1. Copy `.env.example` to `.env.production` and set `VITE_SITE_URL` to the real live domain.
-2. Run `npm run build`. It generates a canonical URL, sitemap, and sitemap reference in `robots.txt` for that domain.
+1. The verified canonical domain is set to `https://www.veloragoldanddiamonds.com`. Copy `.env.example` to `.env.production` only if you need to override it in a hosting environment.
+2. Run `npm run build`. It generates the canonical URL, sitemap, and sitemap reference in `robots.txt` for that domain.
 3. Add the published domain to Google Search Console and keep Velora's Google Business Profile, address, categories, phone number, and website link accurate.
 
 ## Deployment checklist

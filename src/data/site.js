@@ -1,3 +1,5 @@
+const canonicalSiteUrl = 'https://www.veloragoldanddiamonds.com'
+
 export const site = {
   name: 'Velora Gold & Diamonds',
   shortName: 'Velora',
@@ -14,7 +16,7 @@ export const site = {
   instagram: 'https://www.instagram.com/veloragoldanddiamonds/',
   // WhatsApp requires the country code without a plus sign.
   whatsappNumber: '917899974358',
-  siteUrl: import.meta.env.VITE_SITE_URL?.replace(/\/$/, '') || (typeof window !== 'undefined' ? window.location.origin : ''),
+  siteUrl: import.meta.env.VITE_SITE_URL?.replace(/\/$/, '') || canonicalSiteUrl,
 }
 
 export const whatsappUrl = (message) =>

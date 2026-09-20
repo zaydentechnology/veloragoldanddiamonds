@@ -1,7 +1,8 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
-const siteUrl = process.env.VITE_SITE_URL?.trim().replace(/\/+$/, '')
+const canonicalSiteUrl = 'https://www.veloragoldanddiamonds.com'
+const siteUrl = process.env.VITE_SITE_URL?.trim().replace(/\/+$/, '') || canonicalSiteUrl
 const publicDirectory = resolve('public')
 
 await mkdir(publicDirectory, { recursive: true })
@@ -27,6 +28,4 @@ if (siteUrl) {
 `
   await writeFile(resolve(publicDirectory, 'sitemap.xml'), sitemap)
   console.log(`Generated sitemap for ${siteUrl}`)
-} else {
-  console.log('Skipping sitemap: set VITE_SITE_URL before the production build.')
 }
