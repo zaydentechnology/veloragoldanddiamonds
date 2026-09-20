@@ -12,12 +12,18 @@ export default function SEO() {
         '@type': 'JewelryStore',
         ...(businessId && { '@id': businessId }),
         name: site.name,
-        description: 'A refined destination for gold and diamond jewellery at Prithvi Shopping Mall, near SBI Bank, Uppinangady, Karnataka.',
+        alternateName: 'Velora Gold and Diamond',
+        description: 'Gold and diamond jewellery showroom at Prithvi Shopping Mall, near SBI Bank, Uppinangady, Karnataka.',
         address: { '@type': 'PostalAddress', streetAddress: site.streetAddress, addressLocality: 'Uppinangady', addressRegion: 'Karnataka', postalCode: site.postalCode, addressCountry: 'IN' },
         areaServed: { '@type': 'AdministrativeArea', name: 'Uppinangady, Karnataka' },
         hasMap: site.mapsUrl,
         telephone: site.primaryPhone,
         taxID: site.gstNumber,
+        contactPoint: [
+          { '@type': 'ContactPoint', telephone: site.primaryPhone, contactType: 'customer service', areaServed: 'IN', availableLanguage: ['en', 'kn'] },
+          { '@type': 'ContactPoint', telephone: site.secondaryPhone, contactType: 'product enquiries', areaServed: 'IN', availableLanguage: ['en', 'kn'] },
+        ],
+        knowsAbout: ['Gold jewellery', 'Diamond jewellery', 'Bridal jewellery', 'Gold coins', 'Solitaire jewellery'],
         sameAs: [site.instagram],
         ...(site.siteUrl && { url: site.siteUrl, logo: `${site.siteUrl}/velora-logo-transparent.png`, image: socialImage }),
       },
@@ -29,9 +35,9 @@ export default function SEO() {
   }
 
   return <Helmet>
-    <title>Velora Gold & Diamonds | Jewellery in Uppinangady</title>
-    <meta name="description" content="Velora Gold & Diamonds at Prithvi Shopping Mall, near SBI Bank, Uppinangady—gold, diamond, bridal and everyday jewellery for every celebration." />
-    <meta name="keywords" content="jewellery in Uppinangady, Prithvi Shopping Mall jewellery shop, gold jewellery Uppinangady, diamond jewellery Uppinangady, bridal jewellery Karnataka, Velora Gold and Diamonds" />
+    <title>Velora Gold & Diamonds | Gold Jewellery Shop in Uppinangady</title>
+    <meta name="description" content="Velora Gold & Diamonds is a gold and diamond jewellery showroom at Prithvi Shopping Mall, near SBI Bank, Uppinangady. Explore bridal, daily-wear and gold coin collections." />
+    <meta name="keywords" content="Velora Gold and Diamonds Uppinangady, jewellery in Uppinangady, gold jewellery Uppinangady, diamond jewellery Uppinangady, gold shop near SBI Bank Uppinangady, bridal jewellery Karnataka" />
     <meta name="author" content="Velora Gold & Diamonds" />
     <meta name="application-name" content="Velora Gold & Diamonds" />
     <meta name="geo.region" content="IN-KA" />
@@ -40,15 +46,15 @@ export default function SEO() {
     {site.siteUrl && <link rel="canonical" href={site.siteUrl} />}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={site.name} />
-    <meta property="og:title" content="Velora Gold & Diamonds | Jewellery in Uppinangady" />
-    <meta property="og:description" content="Thoughtfully chosen gold and diamonds for every celebration in Uppinangady." />
+    <meta property="og:title" content="Velora Gold & Diamonds | Gold Jewellery in Uppinangady" />
+    <meta property="og:description" content="Gold and diamond jewellery at Prithvi Shopping Mall, near SBI Bank, Uppinangady." />
     <meta property="og:image" content={socialImage} />
     <meta property="og:image:alt" content="Velora Gold and Diamonds fine jewellery" />
     <meta property="og:locale" content="en_IN" />
     {site.siteUrl && <meta property="og:url" content={site.siteUrl} />}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Velora Gold & Diamonds | Jewellery in Uppinangady" />
-    <meta name="twitter:description" content="Gold and diamond jewellery for your meaningful moments." />
+    <meta name="twitter:title" content="Velora Gold & Diamonds | Gold Jewellery in Uppinangady" />
+    <meta name="twitter:description" content="Gold and diamond jewellery at Prithvi Shopping Mall, near SBI Bank, Uppinangady." />
     <meta name="twitter:image" content={socialImage} />
     <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
   </Helmet>

@@ -33,13 +33,13 @@ export default function HeroBanner() {
           </motion.div>
 
           <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.08, duration: 0.82 }} className="font-display text-[4rem] leading-[0.78] tracking-[-.035em] text-white sm:text-[5.7rem] lg:text-[7.9rem]">
-            <span className="text-gold-100">Velora.</span><br />
-            A little more<br />
-            <em className="font-normal text-champagne">than beautiful.</em>
+            <span className="text-gold-100">Velora Gold</span><br />
+            &amp; Diamonds<br />
+            <em className="font-normal text-champagne">in Uppinangady.</em>
           </motion.h1>
 
           <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18, duration: 0.76 }} className="mt-8 max-w-md text-sm leading-7 text-white/78 sm:text-base sm:leading-8">
-            A considered world of gold and diamonds, chosen for the people and moments you want to remember.
+            A considered world of gold and diamond jewellery at Prithvi Shopping Mall, near SBI Bank—chosen for the people and moments you want to remember.
           </motion.p>
 
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.28, duration: 0.76 }} className="mt-9 flex flex-wrap items-center gap-3">

@@ -14,7 +14,7 @@ export const site = {
   instagram: 'https://www.instagram.com/veloragoldanddiamonds/',
   // WhatsApp requires the country code without a plus sign.
   whatsappNumber: '917899974358',
-  siteUrl: import.meta.env.VITE_SITE_URL?.replace(/\/$/, '') || '',
+  siteUrl: import.meta.env.VITE_SITE_URL?.replace(/\/$/, '') || (typeof window !== 'undefined' ? window.location.origin : ''),
 }
 
 export const whatsappUrl = (message) =>
@@ -24,6 +24,10 @@ export const faqItems = [
   {
     question: 'Where is Velora Gold & Diamonds located?',
     answer: 'Velora Gold & Diamonds is at Prithvi Shopping Mall, near SBI Bank, Uppinangady, Karnataka 574241. Use the directions link on this site to plan your visit.',
+  },
+  {
+    question: 'Where can I find gold and diamond jewellery near SBI Bank in Uppinangady?',
+    answer: 'Visit Velora Gold & Diamonds at Prithvi Shopping Mall, near SBI Bank, Uppinangady. Discover gold, diamond, bridal and everyday jewellery in a relaxed showroom setting.',
   },
   {
     question: 'What jewellery can I discover at Velora?',
