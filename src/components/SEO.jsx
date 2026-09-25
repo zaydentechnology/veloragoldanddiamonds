@@ -21,7 +21,6 @@ export default function SEO() {
         taxID: site.gstNumber,
         contactPoint: [
           { '@type': 'ContactPoint', telephone: site.primaryPhone, contactType: 'customer service', areaServed: 'IN', availableLanguage: ['en', 'kn'] },
-          { '@type': 'ContactPoint', telephone: site.secondaryPhone, contactType: 'product enquiries', areaServed: 'IN', availableLanguage: ['en', 'kn'] },
         ],
         knowsAbout: ['Gold jewellery', 'Diamond jewellery', 'Bridal jewellery', 'Gold coins', 'Solitaire jewellery'],
         sameAs: [site.instagram],

@@ -9,13 +9,11 @@ export const site = {
   postalCode: '574241',
   primaryPhone: '+91 91801 96916',
   primaryPhoneHref: 'tel:+919180196916',
-  secondaryPhone: '+91 78999 74358',
-  secondaryPhoneHref: 'tel:+917899974358',
   gstNumber: '29ABCFV6880E1ZR',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Prithvi%20Shopping%20Mall%2C%20Near%20SBI%20Bank%2C%20Uppinangady%2C%20Karnataka%20574241',
   instagram: 'https://www.instagram.com/veloragoldanddiamonds/',
   // WhatsApp requires the country code without a plus sign.
-  whatsappNumber: '917899974358',
+  whatsappNumber: '919180196916',
   siteUrl: import.meta.env.VITE_SITE_URL?.replace(/\/$/, '') || canonicalSiteUrl,
 }
 
